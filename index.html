@@ -10,23 +10,69 @@
 
   <body class="height-100">
     <div class="height-100 column width-100 linecenter offlinecenter">
+<form class="" action="index2.html" method="post" id="form1">
             <div class="column linecenter offlinecenter height-50">
-              <h1>Bienvenido</h1>
-              <div class="row marginall-10px linearound wrap">
-                  <label for="nombre" class="marginright-10px width-50px">Nombre</label>
-                  <input type="text" name="" id="nombre" value="">
-              </div>
-              <div class="row marginall-10px linearound wrap">
-                  <label for="correo" class="marginright-10px width-50px">Correo</label>
-                  <input type="text" name="" id="correo" value="">
-              </div>
-              <div class="row linecenter marginall-10px">
-                <input type="button" name="" value="INGRESAR" class="boton-rojo">
-              </div>
+
+                <h1>Bienvenido</h1>
+                <div class="row marginall-10px linearound wrap offlineend">
+                    <label for="nombre" class="marginright-10px width-50px">Nombre</label>
+                    <div class="column">
+                      <div id="hola2" class="fondoalerta-1 marginbottom-4px">
+                         ingrese nombre de usuario
+                      </div>
+                      <input type="text" name="" id="nombre" value="">
+                    </div>
+
+
+                </div>
+                <div class="row marginall-10px linearound wrap offlineend">
+
+                    <label for="correo" class="marginright-10px width-50px">Correo</label>
+                    <div class="column">
+                      <div id="hola3" class="fondoalerta-1 marginbottom-4px">
+                         ingrese un correo
+                      </div>
+                      <input type="text" name="" id="correo" value="">
+                    </div>
+
+
+                </div>
+                <div class="row linecenter marginall-10px">
+                  <input type="submit" name="" value="INGRESAR" class="boton-rojo">
+                </div>
 
             </div>
+            </form>
     </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
 
+
+  $('#hola2').hide();
+  $('#hola3').hide();
+
+  $('#nombre').change(function(){
+    $('#hola2').hide();
+  });
+
+  $('#correo').change(function(){
+    $('#hola3').hide();
+  });
+
+  $('#form1').submit(function(event){
+    if (document.getElementById("nombre").value == "") {
+      $('#hola2').show();
+      event.preventDefault();
+    }
+    if (document.getElementById("correo").value == "") {
+      $('#hola3').show();
+      event.preventDefault();
+    }
+  });
+
+});
+</script>
 
   </body>
 </html>
