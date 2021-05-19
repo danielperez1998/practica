@@ -38,6 +38,7 @@ flex-direction: column;
 .positionInherit{position: inherit;}
 
 .minheight{min-height: calc(100vh - 200px);}
+.anchobase{min-width: calc(100% - 200px);}
 .minheight-200px{min-height: 200px;}
 .minheight-100px{min-height: 100px;}
 .padre{background-color: lightblue;}
