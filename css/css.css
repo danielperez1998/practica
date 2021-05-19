@@ -37,12 +37,13 @@ flex-direction: column;
 .positionSticky{position: sticky;}
 .positionInherit{position: inherit;}
 
-.minheight{min-height: calc(100vh - 210px);}
-.anchobase{min-width: calc(100% - 210px);}
+.minheight{min-height: calc(100vh - 186px);}
+.anchobase{min-width: calc(100% - 216px);}
 .minheight-200px{min-height: 200px;}
 .minheight-100px{min-height: 100px;}
 .padre{background-color: lightblue;}
-
+.bordergroove {border-style: groove;
+border-width: 3px;}
 
 .menu{position: absolute;
 left: 0px;
@@ -50,7 +51,7 @@ top: 0px;
 z-index: 1;}
 
 
-.boton-rojo{
+.boton-1{
   font-size: 15px;
   padding: 10px;
   font-weight: 800;
@@ -59,9 +60,28 @@ z-index: 1;}
   border-radius: 15px;
   border: 2px solid #E11700;
 }
+.boton-1:hover{
+  opacity: 0.6;
+  text-decoration: none;
+}
+.boton-2{
+  background-color: #DCDCDC;
+}
+.boton-2:hover{
+  background-color: #FFFFFF;
+  text-decoration: none;
+}
+
+.boton-3{
+  background-color: #C92D2D;
+}
+.boton-3:hover{
+  background-color: #FFFFFF;
+  text-decoration: none;
+}
 
 .fondo-1{
-    background-color: #F64935;
+    background-color: #CC2929;
 }
 .fondo-2{
     background-color: #F7EF44;
